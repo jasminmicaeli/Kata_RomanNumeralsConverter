@@ -15,4 +15,16 @@ public class RomanNumeralsTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void input_3_shouldReturn_III(){
+        String  expected    = "III";
+        String  actual;
+        int     given       = 3;
+
+        RomanNumerals romanNumerals = new RomanNumerals();
+        actual = romanNumerals.convert(given);
+
+        assertEquals(expected, actual);
+    }
 }
