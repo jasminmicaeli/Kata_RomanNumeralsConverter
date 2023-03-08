@@ -6,8 +6,9 @@ public class RomanNumerals {
         StringBuilder   stringBuilder               = new StringBuilder();
 
         for(int index = 0; index < romanNumbers.length; index++){
-            if(number >= correspondingIndianNumerals[index]){
+            while(number >= correspondingIndianNumerals[index]){
                 stringBuilder.append(romanNumbers[index]);
+                number -= correspondingIndianNumerals[index];
             }
         }
         return stringBuilder.toString();
