@@ -27,4 +27,16 @@ public class RomanNumeralsTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void input_4_shouldReturn_IV(){
+        String  expected    = "IV";
+        String  actual;
+        int     given       = 4;
+
+        RomanNumerals romanNumerals = new RomanNumerals();
+        actual = romanNumerals.convert(given);
+
+        assertEquals(expected, actual);
+    }
 }
