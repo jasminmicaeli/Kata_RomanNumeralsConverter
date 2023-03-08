@@ -39,4 +39,28 @@ public class RomanNumeralsTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void input_789_shouldReturn_DCCLXXXIX(){
+        String  expected    = "DCCLXXXIX";
+        String  actual;
+        int     given       = 789;
+
+        RomanNumerals romanNumerals = new RomanNumerals();
+        actual = romanNumerals.convert(given);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void input_1029_shouldReturn_MXXIX(){
+        String  expected    = "MXXIX";
+        String  actual;
+        int     given       = 1029;
+
+        RomanNumerals romanNumerals = new RomanNumerals();
+        actual = romanNumerals.convert(given);
+
+        assertEquals(expected, actual);
+    }
 }
